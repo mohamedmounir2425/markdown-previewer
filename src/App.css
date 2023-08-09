@@ -33,7 +33,7 @@ h1{
 }
 .btns{
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     grid-template-rows: minmax(60px, auto);
 }
 .btns button{
@@ -50,19 +50,12 @@ h1{
     -o-border-radius: 4px;
     font-weight: 500;
 }
-.btns button.btn{
+.btns button.active{
     background-color: #56cbdb;
     color: #262834;
     font-weight: bold;
 }
-.btns button:first-of-type{
-    grid-column: 1/3;
-    grid-row: 1;
-}
-.btns button:last-of-type{
-    grid-column: 3/6;
-    grid-row: 1;
-}
+
 textarea{
     width: calc(100% - 10px);
     height: calc(100vh - 150px);
